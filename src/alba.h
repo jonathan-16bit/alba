@@ -34,4 +34,12 @@ enum squares {
   A1 = 112, B1, C1, D1, E1, F1, G1, H1
 };
 
+// Other constants
+enum sides { WHITE, BLACK };
+enum types { NONE = -1, EMPTY, KING, PAWN, KNIGHT, BISHOP, ROOK, QUEEN };
+enum pieces { WK = 1, WP, WN, WB, WR, WQ, BK = 9, BP, BN, BB, BR, BQ };
+enum castling { WKC = 1, WQC = 2, BKC = 4, BQC = 8 };
+enum capture_flags {ALL_MOVES, ONLY_CAPTURES};
+enum game_phase { OPENING, ENDGAME, MIDDLEGAME };
+
 #endif
