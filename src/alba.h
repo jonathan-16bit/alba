@@ -36,9 +36,18 @@ enum squares {
 
 // Other constants
 enum sides { WHITE, BLACK };
+
+// Pieces: [1, 6]
 enum types { NONE = -1, EMPTY, KING, PAWN, KNIGHT, BISHOP, ROOK, QUEEN };
+
+// pieces & 7 : piece type (KPNBRQ) as per above `types` enum
+// pieces >> 3 : piece color (W is 0, B is 1)
 enum pieces { WK = 1, WP, WN, WB, WR, WQ, BK = 9, BP, BN, BB, BR, BQ };
+
+// Each corresponds to a single bit (among 4 bit choices)
+// A combination of all possible castling rights, so each can be edited independently
 enum castling { WKC = 1, WQC = 2, BKC = 4, BQC = 8 };
+
 enum capture_flags {ALL_MOVES, ONLY_CAPTURES};
 enum game_phase { OPENING, ENDGAME, MIDDLEGAME };
 
