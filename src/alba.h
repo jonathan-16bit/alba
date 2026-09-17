@@ -51,4 +51,11 @@ enum castling { WKC = 1, WQC = 2, BKC = 4, BQC = 8 };
 enum capture_flags {ALL_MOVES, ONLY_CAPTURES};
 enum game_phase { OPENING, ENDGAME, MIDDLEGAME };
 
+// defs.c
+extern int board[128];
+extern int king_square[2];
+extern int side;
+extern int enpassant;
+extern int castle;
+
 #endif
